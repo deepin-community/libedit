@@ -6,7 +6,7 @@ Index: libedit/configure.ac
 ===================================================================
 --- libedit.orig/configure.ac
 +++ libedit/configure.ac
-@@ -56,6 +56,13 @@ AC_CHECK_LIB(ncurses, tgetent,,
+@@ -55,6 +55,13 @@ AC_CHECK_LIB(ncurses, tgetent,,
    )]
  )
  
@@ -21,11 +21,11 @@ Index: libedit/configure.ac
  EL_DEPRECATE_WIDEC
  
 @@ -119,26 +126,30 @@ AC_PROG_GCC_TRADITIONAL
+ #AC_FUNC_MALLOC
  #AC_FUNC_REALLOC
- AC_TYPE_SIGNAL
  AC_FUNC_STAT
--AC_CHECK_FUNCS([endpwent isascii memchr memset re_comp regcomp strcasecmp strchr strcspn strdup strerror strrchr strstr strtol issetugid wcsdup strlcpy strlcat vis strvis strunvis __secure_getenv secure_getenv])
-+AC_CHECK_FUNCS([endpwent isascii memchr memset re_comp regcomp strcasecmp strchr strcspn strdup strerror strrchr strstr strtol issetugid wcsdup getline __secure_getenv secure_getenv])
+-AC_CHECK_FUNCS([endpwent isascii memchr memset re_comp regcomp strcasecmp strchr strcspn strdup strerror strrchr strstr strtol issetugid wcsdup strlcpy strlcat vis strvis strunvis __secure_getenv secure_getenv reallocarr])
++AC_CHECK_FUNCS([endpwent isascii memchr memset re_comp regcomp strcasecmp strchr strcspn strdup strerror strrchr strstr strtol issetugid wcsdup vis strvis strunvis __secure_getenv secure_getenv reallocarr])
 +
 +# fgetln
 +AC_CHECK_FUNCS(fgetln, found_fgetln=yes, found_fgetln=no)
