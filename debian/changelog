@@ -1,3 +1,40 @@
+libedit (3.1-20230828-1) unstable; urgency=medium
+
+  [ John Scott ]
+  * Add a DEP-8 test exercising some of the functionality of libedit.
+
+  [ Sylvestre Ledru ]
+  * New upstream release
+  * Add new symbols:
+    - _el_fn_sh_complete
+    - el_deletestr1
+    - el_replacestr
+    - el_wreplacestr
+    - reallocarr
+    - rl_copy_text
+    - rl_delete_text
+    - rl_erase_empty_line
+    - rl_message
+    - rl_prompt_saved
+    - rl_replace_line
+    - rl_restore_prompt
+    - rl_save_prompt
+    - rl_set_key
+
+ -- Sylvestre Ledru <sylvestre@debian.org>  Fri, 08 Sep 2023 10:20:49 +0200
+
+libedit (3.1-20221030-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Sylvestre Ledru <sylvestre@debian.org>  Wed, 02 Nov 2022 23:47:14 +0100
+
+libedit (3.1-20221009-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Sylvestre Ledru <sylvestre@debian.org>  Sat, 15 Oct 2022 21:57:30 +0200
+
 libedit (3.1-20210910-1) unstable; urgency=medium
 
   * New upstream release
