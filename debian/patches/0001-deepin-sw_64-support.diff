@@ -1,0 +1,37 @@
+diff --git a/src/tty.c b/src/tty.c
+index b96c9a5..31c6d8a 100644
+--- a/src/tty.c
++++ b/src/tty.c
+@@ -1360,8 +1360,12 @@ tty_get_signal_character(EditLine *el, int sig)
+ #endif
+ #if defined(SIGINFO) && defined(VSTATUS)
+ 	case SIGINFO:
++#ifdef __sw_64__
+++		return el->el_tty.t_c[ED_IO][CSTATUS];
++#else
+ 		return el->el_tty.t_c[ED_IO][VSTATUS];
+ #endif
++#endif
+ #if defined(SIGTSTP) && defined(VSUSP)
+ 	case SIGTSTP:
+ 		return el->el_tty.t_c[ED_IO][VSUSP];
+diff --git a/src/tty.c.rej b/src/tty.c.rej
+new file mode 100644
+index 0000000..1baa03c
+--- /dev/null
++++ b/src/tty.c.rej
+@@ -0,0 +1,14 @@
++diff a/src/tty.c b/src/tty.c	(rejected hunks)
++@@ -1361,8 +1361,12 @@ tty_get_signal_character(EditLine *el, i
++ #endif
++ #ifdef SIGINFO
++ 	case SIGINFO:
+++#ifdef __sw_64__
+++		return el->el_tty.t_c[ED_IO][CSTATUS];
+++#else
++ 		return el->el_tty.t_c[ED_IO][VSTATUS];
++ #endif
+++#endif
++ #ifdef SIGTSTP
++ 	case SIGTSTP:
++ 		return el->el_tty.t_c[ED_IO][VSUSP];

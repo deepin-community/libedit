@@ -1,3 +1,9 @@
+libedit (3.1-20230828-1deepin1) unstable; urgency=medium
+
+  * feat: add sw64 support.
+
+ -- hudeng <hudeng@deepin.org>  Thu, 29 May 2025 17:40:37 +0800
+
 libedit (3.1-20230828-1) unstable; urgency=medium
 
   [ John Scott ]
