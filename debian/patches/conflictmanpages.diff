@@ -69,7 +69,7 @@ Index: libedit/doc/editline.7.roff
 @@ -16,14 +16,14 @@
  .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  .\"
- .Dd May 7, 2016
+ .Dd April 6, 2024
 -.Dt EDITLINE 7
 +.Dt EDITLINE 7edit
  .Os

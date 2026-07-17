@@ -6,4 +6,3 @@ wcsdup.patch
 PATH_MAX.diff
 conflictmanpages.diff
 termcap.patch
-0001-deepin-sw_64-support.diff
